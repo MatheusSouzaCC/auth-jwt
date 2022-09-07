@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace AuthJwt.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class LoginController : ControllerBase
     {
         private readonly IUserRepository _userRepository;

@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace AuthJwt.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     [Authorize(Roles = "Admin")]
     public class UsersController : ControllerBase
     {
