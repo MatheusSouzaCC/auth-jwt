@@ -25,8 +25,8 @@ namespace AuthJwt.Repository
 
         public List<User> GetUsers() => users;
 
-        public User GetUser(string email, string password)
-            => users.First(x => x.Email.ToLower() == email.ToLower() &&
+        public User? GetUser(string email, string password)
+            => users.FirstOrDefault(x => x.Email.ToLower() == email.ToLower() &&
                          x.Password == password);
     }
 }
